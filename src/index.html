@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+   <link rel="stylesheet" href="css/style.css">
+   <title>Test</title>
+</head>
+
+<body>
+   <form action="#" class="container registration">
+      <h1 class="registration__welcome">Здравствуйте,
+         <span class="registration__welcome-appeal">Человек</span>
+      </h1>
+      <div class="registration__wrapp registration__wrapp-name">
+         <label class="registration__label registration__label-required clue"
+            data-tooltip="Должен содержать не менее 2 символов и только кириллица."><span
+               class="registration__label-style">Имя</span>
+            <input class="registration__input" required placeholder="Введите Имя" type="text">
+         </label>
+
+         <label class="registration__label registration__label-required clue"
+            data-tooltip="Должен содержать не менее 2 символов и только кириллица."><span
+               class="registration__label-style">Фамилия</span>
+            <input class="registration__input" required placeholder="Введите Фамилию" type="text">
+         </label>
+         <label class="registration__label registration__label-required"><span class="registration__label-style">Ваш
+               город</span>
+            <select class="registration__select" required>
+               <option value="3">Брянск</option>
+               <option value="1">Красноярск</option>
+               <option value="2">Москва</option>
+               <option value="4">Санкт-Петербург</option>
+            </select>
+         </label>
+      </div>
+      <div class="registration__wrapp registration__wrapp-password">
+         <label class="registration__label clue"><span class="registration__label-style"
+               data-tooltip="Должен содержать не менее 6 символов и только латинские буквы.">Пароль</span>
+            <input class="registration__input" placeholder="Введите пароль" required type="password">
+         </label>
+         <label class="registration__label registration__label-required clue"
+            data-tooltip="Проверка на совпадение с паролем."><span class="registration__label-style">Пароль
+               ещё раз</span>
+            <input class="registration__input" required placeholder="Повторите пароль" type="password">
+         </label>
+      </div>
+      <hr>
+      <div class="registration__wrapp registration__wrapp-record">
+         <label class="registration__label clue"
+            data-tooltip="Маска с международным форматом “+ 7 (999) 999-99-99”."><span
+               class="registration__label-style">Номер телефона</span>
+            <input class="registration__input" placeholder="+7(***)***-**-**" type="tel">
+         </label>
+         <label class="registration__label clue" data-tooltip="Проверка на валидность email."><span
+               class="registration__label-style">Электронная почта</span>
+            <input class="registration__input" placeholder="name@mail.ru" type="email">
+         </label>
+         <div class="registration__consent"><span class="registration__label-style">Я согласен</span>
+            <label>
+               <input class="registration__checkbox" checked type="checkbox"> <svg class="registration__checkbox-svg"
+                  width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.5" y="0.5" width="11" height="11" stroke="#7E7E7E" />
+                  <path d="M3.5 5.5L2.5 6.5L5.5 9.5L9.5 4.5L8 3L5.5 7.5L3.5 5.5Z" fill="#037BB8" />
+               </svg> принимать актуальную информацию на емейл
+
+            </label>
+         </div>
+      </div>
+      <div class="registration__change">
+         <button class="registration__button" type="submit">Изменить</button>
+         <p class="registration__data">последние изменения 15 мая 2012 в 14:55:17</p>
+      </div>
+   </form>
+</body>
+
+</html>
