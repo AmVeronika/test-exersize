@@ -11,7 +11,7 @@
 </head>
 
 <body>
-   <form action="#" class="container registration">
+   <form class="container registration" action="#" id="app">
       <h1 class="registration__welcome">Здравствуйте,
          <span class="registration__welcome-appeal">Человек</span>
       </h1>
@@ -29,11 +29,8 @@
          </label>
          <label class="registration__label registration__label-required"><span class="registration__label-style">Ваш
                город</span>
-            <select class="registration__select" required>
-               <option value="3">Брянск</option>
-               <option value="1">Красноярск</option>
-               <option value="2">Москва</option>
-               <option value="4">Санкт-Петербург</option>
+            <select class="registration__select" required >
+               <option class="registration__option" :value="megaCity" v-for="city in outputCities">{{city.city}}</option>
             </select>
          </label>
       </div>
@@ -75,6 +72,7 @@
          <p class="registration__data">последние изменения 15 мая 2012 в 14:55:17</p>
       </div>
    </form>
+   <script src="js/vue.js"></script>
 </body>
 
 </html>
